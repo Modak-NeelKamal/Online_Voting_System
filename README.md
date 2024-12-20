@@ -12,7 +12,35 @@ Secure Password Handling.
 
 Database Connectivity.
 
-# Local Host Server
+# Local Host Server 
+
+# Installation
+1. Install a Local Server Environment
+Download and install XAMPP.
+2. Place the Project in the Server Directory :
+   C:\xampp\htdocs\Online-Voting-System (repository)
+3. Configure the Database:
+   
+   Open phpMyAdmin from your XAMPP/WAMP control panel.
+   Create a new database, e.g., project_db.
+   Import the database dump file:
+   Locate the .sql file in the project directory.
+   Use the Import feature in phpMyAdmin to upload the file.
+   Update the database configuration in the project:
+   Open the configuration file (e.g., config.php or .env) in the project and set the database credentials:
+   php
+   Copy code
+   $db_host = 'localhost';
+   $db_user = 'root'; // Default for XAMPP/WAMP
+   $db_password = ''; // Default is empty
+   $db_name = 'project_db';
+
+4. Start the Server
+   Launch the XAMPP control panel.
+   Start the Apache and MySQL services.
+   Open a browser and navigate to:
+   
+   http://localhost/your-repository
 
 # Application
 Users and Administration
